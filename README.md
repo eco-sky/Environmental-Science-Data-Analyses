@@ -5,7 +5,7 @@
 
 # Environmental Science Data Analysis
 
-This repository showcases my environmental science data analysis work completed as part of EVSC 445: Environmental Data Analysis. All assignments were developed using R and focus on applying statistical methods to real-world ecological and environmental datasets.
+This repository showcases my environmental science data analysis work completed as part of EVSC 445: Environmental Data Analysis at SFU. All assignments were developed using R and focus on applying statistical methods to real-world ecological and environmental datasets.
 
 ## Course Overview
 EVSC 445 focuses on statistical and data analysis techniques commonly used in environmental science. The course covers how to design effective sampling and experiments, as well as how to analyze and interpret quantitative data collected from environmental monitoring, assessment, and restoration projects. It also emphasizes developing practical skills in the R programming language for data exploration, analysis, and visualization.
