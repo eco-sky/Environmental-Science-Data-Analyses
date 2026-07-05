@@ -1,0 +1,98 @@
+# ---- Project information ----
+# GLM Nest Cavity Poisson Regression Analysis
+# EVSC 445: Environmental Data Analysis
+# Date: 2025-11-18
+
+# ---- 0. Setup ----
+if (!require(tidyverse)) install.packages("tidyverse")
+if (!require(forcats)) install.packages("forcats")
+
+library(tidyverse)
+library(forcats)
+
+library(readr)
+library(ggplot2)
+library(dplyr)
+
+
+# ---- 1. Load data ----
+
+nest_data <- read_csv("data/nest_data_bc.csv")
+
+summary(nest_data)
+
+# ---- 2. Data exploration ----
+table(nest_data$tree_species)
+table(nest_data$origin_species)
+
+# ---- 3. Factor setup ----
+nest_data <- nest_data %>%
+  mutate(
+    tree_species = fct_relevel(tree_species, "TremblingAspen"),
+    origin_species = fct_relevel(origin_species, "NorthernFlicker")
+  )
+
+# ---- 4. Poisson GLM ----
+glm_model <- glm(
+  n_nests ~ tree_species + origin_species +
+    entrance_size_cm +
+    cavity_depth_cm +
+    cavity_height_m +
+    tree_diameter_cm +
+    dist_forest_edge_m +
+    offset(log_years_avail),
+  family = poisson,
+  data = nest_data
+)
+
+summary(glm_model)
+
+# ---- 5. Model diagnostics (fitted vs observed) ----
+plot_data <- data.frame(
+  response_values = nest_data$n_nests,
+  fitted_values = predict(glm_model, type = "response")
+)
+
+ggplot(plot_data, aes(x = fitted_values, y = response_values)) +
+  geom_point() +
+  theme_bw() +
+  xlab("Fitted values") +
+  ylab("Observed values")
+
+
+
+# ---- 6. Prediction for new cavity ----
+new_cavity <- data.frame(
+  tree_species = "TremblingAspen",
+  origin_species = "PileatedWoodpecker",
+  entrance_size_cm = 8,
+  cavity_depth_cm = 50,
+  cavity_height_m = 5,
+  tree_diameter_cm = 30,
+  dist_forest_edge_m = 10,
+  log_years_avail = log(1)
+)
+
+predict(glm_model, newdata = new_cavity, type = "response")
+
+# ---- 7. Quadratic test ----
+nest_data <- nest_data %>%
+  mutate(tree_diameter_cm2 = tree_diameter_cm^2)
+
+glm_model2 <- glm(
+  n_nests ~ tree_species + origin_species +
+    entrance_size_cm +
+    cavity_depth_cm +
+    cavity_height_m +
+    tree_diameter_cm +
+    tree_diameter_cm2 +
+    dist_forest_edge_m +
+    offset(log_years_avail),
+  family = poisson,
+  data = nest_data
+)
+
+summary(glm_model2)
+
+# ---- 8. Model comparison ----
+AIC(glm_model, glm_model2)
