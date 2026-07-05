@@ -10,7 +10,6 @@
 if (!require(readxl)) install.packages("readxl")
 library(readxl)
 
-
 # ---- 1. Load dataset ----
 
 Fern_data <- read_excel("data/Fert Height.xlsx")
