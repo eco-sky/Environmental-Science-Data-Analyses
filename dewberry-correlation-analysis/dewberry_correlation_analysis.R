@@ -1,5 +1,3 @@
-
-
 # ---- Project information ----
 # Dewberry Correlation Analysis (Rubus caesius)
 # EVSC 445: Environmental Data Analysis
@@ -10,17 +8,14 @@
 
 # ---- 1. Load dataset ----
 
-
 berry_data <- read.csv("data/dewberries.csv")
 
 # ---- 2. Data exploration ----
 summary(berry_data)
 
-
 # ---- 3. Visual analysis ----
 # Pairwise scatterplot matrix (exclude ID column)
 pairs(berry_data[, -1])
-
 
 # ---- 4. Correlation analysis ----
 # Relationship between flowering traits
@@ -31,11 +26,9 @@ cor_flowers_branches <- cor.test(
 
 cor_flowers_branches
 
-
 # ---- 5. Coefficient of determination ----
 # r^2 for flowering traits relationship
 (0.6125409)^2
-
 
 # ---- 6. Confidence interval (99%) ----
 cor.test(
@@ -44,10 +37,8 @@ cor.test(
   conf.level = 0.99
 )
 
-
 # ---- 7. Pairwise correlation matrix ----
 cor(berry_data[, -1])
-
 
 # ---- 8. Additional correlation tests ----
 cor.test(berry_data$branches_with_flowers, berry_data$dewberry_cover)
