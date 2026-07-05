@@ -123,6 +123,10 @@ A cavity with the following characteristics:
 
 was predicted to contain approximately 0.40 nests per year under the fitted model.
 
+<img width="1920" height="975" alt="image" src="https://github.com/user-attachments/assets/babbb467-3daf-4c50-a63b-e4a085fb4884" />
+
+
+
 ## Non linearity Assessment
 
 Tree diameter was evaluated for potential non linear effects using a quadratic term. Although ecological theory suggests that cavity suitability may increase and then plateau with tree size, the quadratic term was not statistically significant and did not improve model fit.
