@@ -48,7 +48,7 @@ Variables include:
 
 - Summary statistics using `summary()`
 - Multiple linear regression using `lm()`
-- Model significance testing using `anova()`
+- Model significance testing using `anova()`z
 - Residual diagnostics to evaluate assumptions
 - Multicollinearity assessment using `cor()` and `pairs()`
 - Forward stepwise model selection using AIC (`step()`)
@@ -144,6 +144,9 @@ The strongest observed correlation was between distance from path and distance f
 This correlation is considered weak to moderate and is not large enough to raise concerns about multicollinearity. Highly correlated predictors can provide overlapping information and inflate coefficient uncertainty, but the observed relationship was well below commonly used concern thresholds (e.g., |r| > 0.7).
 
 The scatterplot matrix also showed substantial dispersion around the trend rather than a near-linear pattern, further supporting the conclusion that multicollinearity was not a major issue in this analysis.
+
+<img width="1920" height="975" alt="image" src="https://github.com/user-attachments/assets/55d87392-ea16-448a-aa12-dc89123ddcbd" />
+
 
 ## Conclusion
 
