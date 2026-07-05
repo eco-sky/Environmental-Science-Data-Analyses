@@ -14,7 +14,6 @@ library(readr)
 library(ggplot2)
 library(dplyr)
 
-
 # ---- 1. Load data ----
 
 nest_data <- read_csv("data/nest_data_bc.csv")
@@ -58,8 +57,6 @@ ggplot(plot_data, aes(x = fitted_values, y = response_values)) +
   theme_bw() +
   xlab("Fitted values") +
   ylab("Observed values")
-
-
 
 # ---- 6. Prediction for new cavity ----
 new_cavity <- data.frame(
