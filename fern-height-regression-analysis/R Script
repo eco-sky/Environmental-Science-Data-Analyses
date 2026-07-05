@@ -15,8 +15,8 @@ Fern_data <- read_excel("Fern Height.xlsx")
 
 # ---- 2. Data preparation ----
 # Convert categorical variables to factors
-fern_data$nearest_tree <- as.factor(fern_data$nearest_tree)
-fern_data$mushrooms_01 <- as.factor(fern_data$mushrooms_01)
+Fern_data$nearest_tree <- as.factor(Fern_data$nearest_tree)
+Fern_data$mushrooms_01 <- as.factor(Fern_data$mushrooms_01)
 
 # ---- 3. Multiple Linear Regression ----
 full_model <- lm(
@@ -26,7 +26,7 @@ full_model <- lm(
     pH +
     mushrooms_01 +
     nearest_tree,
-  data = fern_data
+  data = Fern_data
 )
 
 summary(full_model)
@@ -39,7 +39,7 @@ residuals_model <- resid(full_model)
 
 # Residuals vs distance from path (X1)
 plot(
-  fern_data$dist_from_path_cm,
+  Fern_data$dist_from_path_cm,
   residuals_model,
   xlab = "Distance from Path (cm)",
   ylab = "Residuals",
@@ -49,7 +49,7 @@ abline(h = 0, col = "purple")
 
 # Residuals vs distance from nearest fern (X2)
 plot(
-  fern_data$dist_from_fern_cm,
+  Fern_data$dist_from_fern_cm,
   residuals_model,
   xlab = "Distance from Nearest Fern (cm)",
   ylab = "Residuals",
@@ -59,7 +59,7 @@ abline(h = 0, col = "orange")
 
 # Residuals vs light (X3)
 plot(
-  fern_data$light_lumens,
+  Fern_data$light_lumens,
   residuals_model,
   xlab = "Light (lumens)",
   ylab = "Residuals",
@@ -68,7 +68,7 @@ plot(
 abline(h = 0, col = "green")
 
 # ---- 6. Correlation analysis ----
-continuous_vars <- fern_data[, c(
+continuous_vars <- Fern_data[, c(
   "dist_from_path_cm",
   "dist_from_fern_cm",
   "light_lumens"
@@ -82,7 +82,7 @@ pairs(continuous_vars)
 # ---- 7. Null model ----
 null_model <- lm(
   fern_height_cm ~ 1,
-  data = fern_data
+  data = Fern_data
 )
 
 # ---- 8. Forward stepwise selection ----
