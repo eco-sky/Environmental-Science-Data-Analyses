@@ -38,7 +38,7 @@ Approximately 37.5% of variation in flower production was explained by flowering
 
 The figure below shows the pairwise relationships among dewberry traits and environmental variables.
 
-<img width="1536" height="736" alt="image" src="https://github.com/user-attachments/assets/8d245b0f-ef70-4513-b6c5-08e295e35c5a" />
+<img width="1920" height="975" alt="image" src="https://github.com/user-attachments/assets/79c6463b-827b-426d-8f06-a0e28a0352ea" />
 
 ## Ecological Interpretation and Hypotheses
 
