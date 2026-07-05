@@ -28,4 +28,3 @@ t_res
 # Group means for interpretation
 aggregate(Frond_length ~ Tree_type, data = fern_data, mean)
 aggregate(Frond_length ~ Tree_type, data = fern_data, sd)
-
