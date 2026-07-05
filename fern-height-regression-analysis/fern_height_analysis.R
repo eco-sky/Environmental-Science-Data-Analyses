@@ -13,7 +13,7 @@ library(readxl)
 
 # ---- 1. Load dataset ----
 
-Fern_data <- read_excel("C:/Users/Senak/Downloads/Fert Height.xlsx")
+Fern_data <- read_excel("data/Fert Height.xlsx")
 
 # ---- 2. Data preparation ----
 # Convert categorical variables to factors
