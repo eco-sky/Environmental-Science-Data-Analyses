@@ -5,6 +5,8 @@
 
 A design-based R analysis estimating the total number of books in Simon Fraser University's WAC Bennett Library using stratified random sampling.
 
+This analysis was completed as part of EVSC 445: Environmental Data Analysis.
+
 ## Assignment Description
 
 Libraries contain millions of books, making complete enumeration of all books impractical. This assignment estimates the total number of books located on the accessible floors of SFU's WAC Bennett Library using a probability-based sampling design.
