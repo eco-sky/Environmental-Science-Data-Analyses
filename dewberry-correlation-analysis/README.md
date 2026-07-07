@@ -6,7 +6,7 @@ Simple R analysis exploring correlations between plant growth traits and environ
 
 This analysis was completed as part of EVSC 445: Environmental Data Analysis.
 
-## Project Description
+## Assignment Description
 
 European dewberry (*Rubus caesius*) is an invasive plant species used to study relationships between plant growth traits and environmental conditions. This analysis investigates correlations between flowering characteristics, leaf area, and environmental variables such as soil moisture, canopy cover, and dewberry density.
 
