@@ -170,6 +170,6 @@ All R code used for data analysis, model fitting, model selection, residual diag
 
 ## Notes
 
-This is an exploratory ecological modelling project conducted for coursework.
+This is an exploratory ecological modelling assignment conducted for coursework.
 
 Results should be interpreted as correlational rather than causal.
