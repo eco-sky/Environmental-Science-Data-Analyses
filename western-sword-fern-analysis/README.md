@@ -75,8 +75,6 @@ These findings are limited to the sample collected and assume independence and a
 
 The R script used for the statistical analysis is included in this repository. Please refer to the file for the full analysis workflow.
 
-The dataset used in this project can be downloaded here: *Fern Frond Length.xlsx*
-
 ## **Notes**
 
 This is a simple exploratory statistical analysis completed for coursework
