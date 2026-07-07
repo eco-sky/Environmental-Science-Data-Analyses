@@ -3,8 +3,7 @@
 # EVSC 445: Environmental Data Analysis
 # Date: 2025-10-13
 
-# Exploring correlations between plant traits and environmental variables
-# in European dewberry populations
+# Exploring correlations between plant traits and environmental variables in European dewberry populations
 
 # ---- 1. Load dataset ----
 
