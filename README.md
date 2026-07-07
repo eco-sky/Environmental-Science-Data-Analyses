@@ -23,14 +23,15 @@ Through this course, I developed skills in:
 - Performing simple and multiple linear regression analysis  
 - Exploring advanced topics such as mixed effects models and related statistical approaches  
 
-## Projects
+## Assignments
 
 This repository contains the following independent analyses:
 
 - Western Sword Fern Analysis  
 - Dewberry Correlation Analysis  
 - Fern Height Regression Analysis  
-- GLM Nest Cavity Poisson Analysis  
+- GLM Nest Cavity Poisson Analysis
+- Stratification Library Analysis
 
 Each folder includes its own README with detailed methods, analysis, and results.
 
