@@ -2,11 +2,11 @@
 
 Simple R analysis of fern growth on Burnaby Mountain, BC examining whether tree type (deciduous vs coniferous) influences frond length.
 
-This project was completed as part of EVSC 445: Environmental Data Analysis.
+This assignment was completed as part of EVSC 445: Environmental Data Analysis.
 
-## **Project Description**
+## **Assignment Description**
 
-Ferns are effective indicators of micro-environmental conditions due to their sensitivity to light, moisture, soil properties, and temperature. This project investigates whether fern frond length differs between two habitat types: ferns growing under deciduous trees and ferns growing under coniferous trees.
+Ferns are effective indicators of micro-environmental conditions due to their sensitivity to light, moisture, soil properties, and temperature. This assignment investigates whether fern frond length differs between two habitat types: ferns growing under deciduous trees and ferns growing under coniferous trees.
 
 Field data were collected on Burnaby Mountain, British Columbia, using simple random sampling of individual ferns.
 
