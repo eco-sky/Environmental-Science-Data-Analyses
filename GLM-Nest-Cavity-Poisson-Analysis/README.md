@@ -2,7 +2,7 @@
 
 # GLM Nest Cavity Poisson Regression Analysis
 
-This project analyzes how environmental, structural, and biological factors influence bird nest counts in tree cavities using generalized linear models (GLMs) with a Poisson distribution.
+This assignment analyzes how environmental, structural, and biological factors influence bird nest counts in tree cavities using generalized linear models (GLMs) with a Poisson distribution.
 
 This analysis was completed as part of EVSC 445: Environmental Data Analysis.
 
